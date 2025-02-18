@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mangata & Gallo</title>
+    <link rel="icon" href="/Imagenes/icono.png" type="image/png">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header>
+        <img src="/Imagenes/Asset 2@3x.png" alt="Logo Mangata & Gallo">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="coleccion.html">Collection</a></li>
+            <li><a href="customjewelry.html">Custom Jewelry</a></li>
+            <li><a href="contacto.html">Contact</a></li>
+            <li><a href="sobre.html">About Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="our-creations">
+            <h2>Our Creations</h2>
+            <p>Explore our selection of high-quality jewelry...</p>
+        
+            <div class="creation-item">
+                <div class="creation-image">
+                    <img src="/Imagenes/Gold Engagement Ring.png" alt="Elegant Gold Ring" style="width: 600px; height: auto">
+                </div>
+                <div class="creation-info">
+                    <h3>Elegant Gold Ring</h3>
+                    <p>An exquisite gold ring designed for timeless elegance and beauty.</p>
+                </div>
+            </div>
+        
+            <div class="creation-item reverse">
+                <div class="creation-image">
+                    <img src="/Imagenes/Luxury Diamond Necklace.png" alt="Luxury Diamond Necklace" style="width: 600px; height: auto">
+                </div>
+                <div class="creation-info">
+                    <h3>Luxury Diamond Necklace</h3>
+                    <p>A breathtaking diamond necklace that embodies luxury and sophistication.</p>
+                </div>
+            </div>
+        
+            <div class="creation-item">
+                <div class="creation-image">
+                    <img src="/Imagenes/Sophisticated Bracelet.png" alt="Sophisticated Bracelet" style="width: 600px; height: auto">
+                </div>
+                <div class="creation-info">
+                    <h3>Sophisticated Bracelet</h3>
+                    <p>Crafted for elegance, this bracelet adds a touch of sophistication to any look.</p>
+                </div>
+            </div>
+        </section>
+        <section id="registro-container">
+            <div class="registro-form">
+                <h2>Sign Up</h2>
+                <form action="procesar_registro.php" method="POST">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+        
+                    <label for="telefono">Phone Number:</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+        
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+        
+                    <label for="pais">Country of Residence:</label>
+                    <select id="pais" name="pais" required>
+                        <option value="" disabled selected>Select your country</option>
+                        <option value="US">United States</option>
+                        <option value="MX">Mexico</option>
+                        <option value="ES">Spain</option>
+                        <option value="CO">Colombia</option>
+                        <option value="AR">Argentina</option>
+                        <option value="CL">Chile</option>
+                        <option value="PE">Peru</option>
+                        <option value="BR">Brazil</option>
+                        <option value="UK">United Kingdom</option>
+                        <option value="FR">France</option>
+                        <option value="DE">Germany</option>
+                    </select>
+        
+                    <label for="terminos">
+                        <input type="checkbox" id="terminos" name="terminos"
+                        required> I accept the Terms and Conditions.
+                    <style>
+                        input[type="checkbox"]:checked {
+                            accent-color: #722f37;
+                        }
+                        input[type="checkbox"]:hover {
+                            box-shadow: 0 0 5px #722f37;
+                            border: 2px solid #722f37;
+                        }
+                    </style>
+        
+                    </label>
+        
+                    <button type="submit">Register</button>
+                </form>
+            </div>
+        
+            <div class="registro-img">
+                <img src="/Imagenes/Pareja.png" alt="Jewelry Image">
+            </div>
+        </section>
+        
+        
+        <section id="sobre">
+            <h1>About Mangata & Gallo</h1>
+            <p>
+                Mangata and Gallo is a jewelry store specializing in special 
+                occasions such as engagements, weddings, and anniversaries...</p>
+        </section>
+        
+    </main>
+    <footer>
+        <p>&copy; 2025 Mangata & Gallo. All rights reserved.</p>
+        <img src="/Imagenes/Asset 3@3x.png" alt="Logo Mangata & Gallo">
+    </footer>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mangata & Gallo</title>
+    <link rel="icon" href="/Imagenes/icono.png" type="image/png">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header>
+        <img src="/Imagenes/Asset 2@3x.png" alt="Logo Mangata & Gallo">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="coleccion.html">Collection</a></li>
+            <li><a href="contacto.html">Contact</a></li>
+            <li><a href="sobre.html">About Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="booknowcontainer">
+            <div class="booknow">
+                <h1>Book Now</h1>
+                <p>Create your custom jewelry and book your consultation today!</p>
+            </div>
+        </section>
+        
+        <section id="appointment">
+            <div>
+                <h2>Schedule Your Appointement</h2>
+                <p>Make your jewelry unique by scheduling a virtual or in-person appointment at our main headquarters.</p>
+                <form id="appointment-form" action="/submit-appointment" method="POST">
+                
+                <div class="boxappointment">
+            
+                    <label for="email">Your registered email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your registered email" required>
+
+                <label>appointment Type:</label>
+                    
+                    <div class="radiooptions">
+                        <div>
+                            <input type="radio" id="virtual" name="appointment_type" value="virtual" required>
+                            <label for="virtual">Virtual Consultation</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="in_person" name="appointment_type" value="in_person">
+                            <label for="in_person">In-person (Address: 123 Jewelry St, Austin, TX)</label>
+                        </div>
+                    </div>
+
+                    <label for="date">Preferred Date:</label>
+                    <input type="date" id="date" name="date" required>
+
+                    <button type="submit">Book Now</button>
+                </div>
+                </form>
+            </div>
+        </section>
+        
+        <section id="sobre">
+            <h1>About Mangata & Gallo</h1>
+            <p>
+                Mangata and Gallo is a jewelry store specializing in special 
+                occasions such as engagements, weddings, and anniversaries...</p>
+        </section>
+    </main>
+</body>
+</html>

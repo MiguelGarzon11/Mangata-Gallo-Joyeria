@@ -1,0 +1,254 @@
+/* Importar tipografía elegante */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+/* Variables de colores */
+:root {
+    --gold: #b8860b; /* Dorado elegante */
+    --wine: #722f37; /* Vino profundo */
+    --background-light: #fffaf0; /* Fondo claro */
+    --text-dark: #2c2c2c; /* Texto oscuro */
+    --white-smoke: whitesmoke; /* Blanco ahumado */
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Playfair Display', serif; /* Elegante y sofisticado */
+    background-color: var(--background-light);
+    color: var(--text-dark);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background-color: gainsboro;
+    padding: 2rem;
+}
+
+header img {
+    width: 40rem;
+    height: auto;
+}
+
+@media (max-width: 1200px){
+    header img {
+        width: 30rem;
+    }
+}
+
+@media (max-width: 768px){
+    header img {
+        width: 26rem;
+    }
+}
+
+@media (max-width: 480px){
+    header img {
+        width: 18rem;
+    }
+}
+
+/* Navegación */
+nav {
+    background-color: var(--wine);
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 2rem;
+}
+
+nav a {
+    color: var(--white-smoke);
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--gold);
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.6);
+}
+
+/* Main */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+h1, h2 {
+    color: var(--gold);
+}
+
+/* Footer */
+footer {
+    background-color: var(--wine);
+    padding: 1rem;
+    color: var(--white-smoke);
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+footer img {
+    max-width: 120px;
+}
+
+/* Sección de registro */
+#registro-container, #appointment {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Formulario de registro */
+
+input[type="checkbox"] {
+    width: auto; 
+    margin: 0; 
+    position: static;
+}
+
+.checkbox-label{
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem; 
+    margin-bottom: 1.5rem;
+    background-color: var(--white-smoke);
+}
+
+.registro-form {
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    max-width: 400px;
+    text-align: left;
+}
+
+form input, form select{
+    width: 100%;
+    padding: 0.8rem;
+    padding-left: 2rem;
+    margin: 5px 0 1rem 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+/* Botón de registro */
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--wine);
+    color: var(--white-smoke);
+    border: 2px solid transparent;
+    border-radius: 10px;
+    font-size: 1.15rem;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 1.5rem;
+}
+
+button:hover {
+    border: 2px solid var(--wine);
+    box-shadow: 0 0 7px var(--wine);
+    color: var(--gold);
+    background-color: transparent;
+
+}
+
+/* Imagen de registro */
+.registro-img img {
+    max-width: 350px;
+    border-radius: 10px;
+}
+
+/* Secciones generales */
+#sobre, #coleccion {
+    text-align: center;
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+}
+
+#our-creations {
+    padding: 0.5rem 5rem;
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+.creation-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+    padding-top: 3rem;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.creation-image img:hover {
+    max-width: 50vw;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.creation-info {
+    max-width: 40%;
+    text-align: left;
+}
+
+.creation-info h3 {
+    color: var(--gold);
+    font-size: 2rem;
+}
+
+.creation-info p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .creation-item, .reverse {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .creation-image img {
+        max-width: 100%;
+    }
+
+    .creation-info {
+        max-width: 100%;
+    }
+}
