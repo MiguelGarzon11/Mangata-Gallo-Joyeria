@@ -123,6 +123,23 @@ footer img {
     margin: auto;
 }
 
+@media (max-width: 1200px){
+    #registro-container, #appointment {
+        width: 30rem;
+    }
+}
+
+@media (max-width: 768px){
+    #registro-container, #appointment {
+        width: 22rem;
+    }
+}
+
+@media (max-width: 480px){
+    #registro-container, #appointment {
+        width: 17rem;
+    }
+}
 /* Formulario de registro */
 
 input[type="checkbox"] {
@@ -188,6 +205,26 @@ button:hover {
     border-radius: 10px;
 }
 
+@media (max-width: 1200px){
+    .registro-img img {
+        width: 300px;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px){
+    .registro-img img {
+        width: 260px;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px){
+    .registro-img img {
+        width: 250px;
+        height: auto;
+    }
+}
 /* Secciones generales */
 #sobre, #coleccion {
     text-align: center;
