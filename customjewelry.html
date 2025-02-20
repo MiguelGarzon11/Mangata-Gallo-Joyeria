@@ -29,36 +29,45 @@
         
         <section id="appointment">
             <div>
-                <h2>Schedule Your Appointement</h2>
+                <h2>Schedule Your Appointment</h2>
                 <p>Make your jewelry unique by scheduling a virtual or in-person appointment at our main headquarters.</p>
-                <form id="appointment-form" action="/submit-appointment" method="POST">
                 
-                <div class="boxappointment">
-            
-                    <label for="email">Your registered email</label>
-                    <input type="email" id="email" name="email" placeholder="Enter your registered email" required>
-
-                <label>appointment Type:</label>
-                    
-                    <div class="radiooptions">
-                        <div>
-                            <input type="radio" id="virtual" name="appointment_type" value="virtual" required>
-                            <label for="virtual">Virtual Consultation</label>
+                <form id="appointment-form" action="/submit-appointment" method="POST">
+                    <div class="boxappointment">
+                        
+                        <!-- Email -->
+                        <label for="email">Your registered email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your registered email" required>
+        
+                        <!-- Appointment Type -->
+                        <div class="appointment-type">
+                            <label>Appointment Type:</label>
+                            
+                            <div class="appointment-option">
+                                <input type="radio" id="virtual" name="appointment_type" value="virtual" required>
+                                <label for="virtual">Virtual Consultation</label>
+                            </div>
+        
+                            <div class="appointment-option">
+                                <input type="radio" id="in_person" name="appointment_type" value="in_person">
+                                <label for="in_person">In-person (Address: 123 Jewelry St, Austin, TX)</label>
+                            </div>
                         </div>
-                        <div>
-                            <input type="radio" id="in_person" name="appointment_type" value="in_person">
-                            <label for="in_person">In-person (Address: 123 Jewelry St, Austin, TX)</label>
+        
+                        <!-- Preferred Date -->
+                        <div class="date">
+                            <label for="date">Preferred Date:</label>
+                            <input type="date" id="date" name="date" required>
                         </div>
+        
                     </div>
-
-                    <label for="date">Preferred Date:</label>
-                    <input type="date" id="date" name="date" required>
-
+        
                     <button type="submit">Book Now</button>
-                </div>
+
                 </form>
             </div>
         </section>
+
         
         <section id="sobre">
             <h1>About Mangata & Gallo</h1>
@@ -68,4 +77,8 @@
         </section>
     </main>
 </body>
+<footer>
+    <p>&copy; 2025 Mangata & Gallo. All rights reserved.</p>
+    <img src="Imagenes/Asset 3@3x.png" alt="Logo Mangata & Gallo">
+</footer>
 </html>
